@@ -1,0 +1,271 @@
+/* Universal Styles */
+html {
+    font-family: 'Averia Libre', cursive;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    background-color: #04151f;
+}
+
+/* For Mobile Devices */
+header img {
+    object-fit: cover;
+    object-position: center center;
+    width: 100%;
+    height: 200px;
+}
+
+header h2 {
+    font-family: 'Averia Libre';
+    font-weight: bold;
+    font-size: 2.15rem;
+    text-align: center;
+    color: #04151f;
+    background-color: #C44900;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #04151f;
+}
+
+span {
+    color: #C44900;
+    scale: 120%;
+}
+
+nav span:hover,
+nav span:active,
+nav span:focus {
+    scale: 175%;
+    color: #EFD6AC;
+}
+
+#photos span {
+    color: #EFD6AC;
+    margin: .25rem;
+
+}
+
+#photos span:hover,
+#photos span:active,
+#photos span:focus {
+    scale: 175%;
+    color: #C44900;
+}
+
+#events,
+#photos,
+#blog,
+#socials {
+    margin: 2rem 0;
+}
+
+h3 {
+    color: #EFD6AC;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: bold;
+    font-size: 1.15rem;
+    text-align: center;
+    padding: .5rem;
+    margin: 0;
+}
+
+p,
+figcaption {
+    color: #EFD6AC;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    text-align: justify;
+    line-height: 1.25rem;
+    margin: 0 1rem;
+}
+
+.content-box p {
+    width: 90%;
+    margin: auto;
+    padding-bottom: .25rem;
+}
+
+figcaption {
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Averia Libre';
+    font-weight: bold;
+    font-size: 2.15rem;
+    text-align: center;
+    color: #C44900;
+    margin: 0;
+}
+
+.content-box,
+.photo-box {
+    margin: 1rem 1rem;
+    padding-bottom: .5rem;
+}
+
+.content-box {
+    background-color: #183a37;
+}
+
+#blog .content-box {
+    background-color: #432534;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+#photos img {
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+    display: block;
+    margin: auto;
+    padding-bottom: .5rem;
+}
+
+.content-header {
+    object-fit: cover;
+    object-position: center center;
+    width: 90%;
+    height: 150px;
+    display: block;
+    margin: auto;
+    padding-bottom: .5rem;
+
+}
+
+.button-box {
+    text-align: center;
+    margin: .5rem;
+}
+
+button {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: bold;
+    color: #EFD6AC;
+    background-color: #04151f;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+}
+
+button:hover,
+button:focus {
+    background-color: #C44900;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: row;
+    margin: .5rem 1rem;
+    justify-content: center;
+}
+
+#socials {
+    margin-bottom: .5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+i {
+    color: #C44900;
+}
+
+footer {
+    border-top: 1px solid #EFD6AC;
+}
+
+footer p {
+    color: #EFD6AC;
+    text-align: center;
+    font-size: .90rem;
+    margin: .5rem;
+}
+
+/* For Tablets */
+@media only screen and (min-width: 600px) {
+
+    header img {
+        height: 250px;
+    }
+
+    #welcome {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 78%;
+        margin: auto;
+    }
+
+    h2, header h2 {
+        font-size: 2.45rem;
+    }
+
+    h3 {
+        font-size: 1.45rem;
+    }
+
+}
+
+/* For Desktops */
+@media only screen and (min-width: 768px) {
+
+    header img {
+        object-fit: scale-down;
+        object-position: center center;
+        height: 300px;
+    }
+
+    #welcome {
+        width: 72%;
+
+    }
+
+    .content-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: stretch;
+        margin: 0 1rem;
+    }
+
+    .content-box {
+        width: 30%;
+
+    }
+
+    #photos img {
+        object-fit: cover;
+        width: 100%;
+        height: 400px;
+        display: block;
+        margin: auto;
+        padding-bottom: .5rem;
+    }
+
+    .social-links {
+        justify-content: space-evenly;
+    }
+
+    #socials {
+        width: 72%;
+        margin: auto;
+        padding-bottom: 2rem;
+    }
+
+    footer p {
+        font-size: 1rem;
+    }
+}
